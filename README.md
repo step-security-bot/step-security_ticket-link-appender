@@ -60,10 +60,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-### Recommendations:
-
-> Smart Commit
-
-This makes your commits and PR summary consistent.
-
-<a href="https://github.com/sbimochan/smart-commit" target="_blank">Check repo.</a>
