@@ -1,0 +1,18 @@
+on: pull_request
+
+permissions:
+  pull-requests: write
+  
+jobs:
+  example_pr_link:
+    runs-on: ubuntu-latest
+    name: Auto ticket link appender
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Append ticket link
+        uses: ./
+        with:
+          jira-project-url: https://jira.atlassian.net/browse
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
